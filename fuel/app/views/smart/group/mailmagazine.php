@@ -18,6 +18,44 @@
   <link rel='stylesheet' href='http://speed-speed.com/smart/css/common/design.css' media='all'>
   <link rel='stylesheet' href='http://speed-speed.com/smart/css/group/common.css' media='all'>
   <link rel='stylesheet' href='http://speed-speed.com/smart/css/group/mailmagazine.css' media='all'>
+  <style>
+    .form-space {
+      margin: 0 20px 20px;
+    }
+
+    .ttl-pink {
+      background: #FF238F;
+      padding: 8px 6px;
+      margin-bottom: 10px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .bottom-space {
+      margin-bottom: 4px;
+    }
+
+    .inline-blk {
+      display: inline-block;
+    }
+
+    .input-form {
+      width: 300px;
+      padding: 0 7px;
+    }
+
+    .btn-pink {
+      height: 25px;
+      width: 65px;
+      cursor: pointer;
+      background: #ff00a6;
+      color: #FFF;
+      border: none;
+      text-align: center;
+      border-radius: 4px;
+      margin-left: 3px;
+    }
+  </style>
   <!-- ジャバスクリプトの指定 -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="/smart/js/iscroll.js"></script>
@@ -64,18 +102,19 @@
         <h3><span><img src="/smart/img/common/h2_mailmagzine_c.jpg" alt="メールマガジン"></span></h3>
         <div class="content-box">
           <h4><span class="sub-attend">メルマガ会員募集中</span></h4>
-          <p>配信を希望するメールアドレスをご入力の上、「登録」ボタンを押して下さい。<br>
+          <p style="line-height: 1.3;">配信を希望するメールアドレスをご入力の上、「登録」ボタンを押して下さい。<br>
             「メールマガジン会員登録のご案内」メールをお送りします。<br>
             24時間以内にメール内のURLから手続きを行って頂くことで、ご登録が完了します。</p>
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">SPEEDグループメルマガ登録</div>
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">
+              SPEEDグループメルマガ登録</div>
             <div class="flex">
-              <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+              <div class="mm-form-item bottom-space">メールアドレス</div>
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -83,14 +122,14 @@
           </form>
           <!-----------------------///////////////////ACメーラー ----------------------->
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">SPEEDグループメルマガ登録</div>
-            <div class="flex">
-              <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">難波店メルマガ登録</div>
+            <div class=" flex">
+              <div class="mm-form-item bottom-space">メールアドレス</div>
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -98,14 +137,16 @@
           </form>
           <!-----------------------///////////////////ACメーラー ----------------------->
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">SPEEDグループメルマガ登録</div>
-            <div class="flex">
-              <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class=" mm-form-ttl ttl-pink">
+              日本橋店メルマガ登録
+            </div>
+            <div class=" flex">
+              <div class="mm-form-item bottom-space">メールアドレス</div>
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -113,14 +154,14 @@
           </form>
           <!-----------------------///////////////////ACメーラー ----------------------->
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">SPEEDグループメルマガ登録</div>
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">京橋店メルマガ登録</div>
             <div class="flex">
-              <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+              <div class="mm-form-item bottom-space">メールアドレス</div>
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -128,14 +169,14 @@
           </form>
           <!-----------------------///////////////////ACメーラー ----------------------->
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">SPEEDグループメルマガ登録</div>
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">梅田店メルマガ登録</div>
             <div class="flex">
-              <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+              <div class="mm-form-item bottom-space">メールアドレス</div>
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -145,18 +186,18 @@
         </div>
         <div class="content-box">
           <h4><span class="sub-attend">メルマガの解除</span></h4>
-          <p>ご登録のメールアドレスをご入力の上、「解除」ボタンを押して下さい。<br>
+          <p style="line-height: 1.3;">ご登録のメールアドレスをご入力の上、「解除」ボタンを押して下さい。<br>
             「メールマガジン会員の登録解除確認メール」メールをお送りします。<br>
             24時間以内にメール内のURLから手続きを行って頂くことで、ご登録を解除します。</p>
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">SPEEDグループメルマガ登録</div>
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">SPEEDグループメルマガ登録</div>
             <div class="flex">
-              <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+              <div class="mm-form-item bottom-space">メールアドレス</div>
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -164,14 +205,14 @@
           </form>
           <!-----------------------///////////////////ACメーラー ----------------------->
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">難波店メルマガ登録</div>
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">難波店メルマガ登録</div>
             <div class="flex">
-              <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+              <div class="mm-form-item bottom-space">メールアドレス</div>
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -179,14 +220,14 @@
           </form>
           <!-----------------------///////////////////ACメーラー ----------------------->
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">日本橋店メルマガ登録</div>
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">日本橋店メルマガ登録</div>
             <div class="flex">
-              <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+              <div class="mm-form-item bottom-space">メールアドレス</div>
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -194,14 +235,14 @@
           </form>
           <!-----------------------///////////////////ACメーラー ----------------------->
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">京橋店メルマガ登録</div>
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">京橋店メルマガ登録</div>
             <div class="flex">
-              <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+              <div class="mm-form-item bottom-space">メールアドレス</div>
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -209,14 +250,14 @@
           </form>
           <!-----------------------///////////////////ACメーラー ----------------------->
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">梅田店メルマガ登録</div>
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">梅田店メルマガ登録</div>
             <div class="flex">
-              <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+              <div class="mm-form-item bottom-space">メールアドレス</div>
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -228,7 +269,7 @@
 
         <div class="content-box">
           <h4><span class="sub-attend">出勤メルマガ</span></h4>
-          <p>お気に入りのあの子の出勤をガッチリおさえる！<br>あらかじめ指定した女の子が出勤すると、あなたの元にメールを配信！<br>お店で出勤を確認する手間が省けます！<br>お気に入りの女の子がいれば、何人でも登録OK！<br>携帯のアドレスをご利用の方は、メール拒否設定の解除又は、ドメイン指定受信の設定（speed-speed.comの設定）をお願いします。<br>メールが受信されない場合があります。</p>
+          <p style="line-height: 1.3;">お気に入りのあの子の出勤をガッチリおさえる！<br>あらかじめ指定した女の子が出勤すると、あなたの元にメールを配信！<br>お店で出勤を確認する手間が省けます！<br>お気に入りの女の子がいれば、何人でも登録OK！<br>携帯のアドレスをご利用の方は、メール拒否設定の解除又は、ドメイン指定受信の設定（speed-speed.comの設定）をお願いします。<br>メールが受信されない場合があります。</p>
           <?php
           foreach ($shops as $shop) :
             //-- エステティークは除く
