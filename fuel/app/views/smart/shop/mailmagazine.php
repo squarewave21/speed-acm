@@ -18,6 +18,44 @@
   <link rel='stylesheet' href='http://speed-speed.com/smart/css/common/design.css' media='all'>
   <link rel='stylesheet' href='http://speed-speed.com/smart/css/group/common.css' media='all'>
   <link rel='stylesheet' href='http://speed-speed.com/smart/css/group/mailmagazine.css' media='all'>
+  <style>
+    .form-space {
+      margin: 0 20px 20px;
+    }
+
+    .ttl-pink {
+      background: #FF238F;
+      padding: 8px 6px;
+      margin-bottom: 10px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .bottom-space {
+      margin-bottom: 4px;
+    }
+
+    .inline-blk {
+      display: inline-block;
+    }
+
+    .input-form {
+      width: 300px;
+      padding: 0 7px;
+    }
+
+    .btn-pink {
+      height: 25px;
+      width: 65px;
+      cursor: pointer;
+      background: #ff00a6;
+      color: #FFF;
+      border: none;
+      text-align: center;
+      border-radius: 4px;
+      margin-left: 3px;
+    }
+  </style>
   <!-- ジャバスクリプトの指定 -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="/smart/js/iscroll.js"></script>
@@ -69,19 +107,19 @@
         </div> -->
 
         <div class="content-box">
-          <h3><span class="sub-attend">メルマガ会員募集中</span></h3>
-          <p>配信を希望するメールアドレスをご入力の上、「登録」ボタンを押して下さい。<br>
+          <h3><span class="sub-attend" style="margin: 20px 20px 0;">メルマガ会員募集中</span></h3>
+          <p style="line-height: 1.3;">配信を希望するメールアドレスをご入力の上、「登録」ボタンを押して下さい。<br>
             「メールマガジン会員登録のご案内」メールをお送りします。<br>
             24時間以内にメール内のURLから手続きを行って頂くことで、ご登録が完了します。</p>
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap">
-            <div class="mm-form-ttl">メルマガ登録</div>
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">メルマガ登録</div>
             <div class="flex">
               <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <div class="mm-form-item">
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <div class="mm-form-item inline-blk">
                 <input type="hidden" name="reg" value="add">
-                <input type="submit" value="登録" class="mm-form-submit">
+                <input type="submit" value="登録" class="mm-form-submit btn-pink" style="border-radius: 4px;">
                 <input type="hidden" name="encode" value="文字コード">
                 <input type="hidden" name="checkbox_list" value="">
               </div>
@@ -103,14 +141,14 @@
           <div class="submit"><input type="submit" onclick="location.href='mailto:<?= $mailmagazine_subscription_cancel_email_address_of_shop ?>'" value=" メールマガジンを解除する"></div>
         </div> -->
         <div class="content-box" id="p1">
-          <h3><span class="sub-attend">メルマガの解除</span></h3>
+          <h3><span class="sub-attend" style="margin: 20px;">メルマガの解除</span></h3>
           <!----------------------- ACメーラー ----------------------->
-          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap acm-remove-wrap">
-            <div class="mm-form-ttl">メルマガ登録解除</div>
+          <form action="http://tribe-webtest.xyz/acmailer/reg.cgi" method="post" name="form2" class="acm-wrap acm-remove-wrap form-space">
+            <div class="mm-form-ttl ttl-pink">メルマガ登録解除</div>
             <div class="flex">
               <div class="mm-form-item">メールアドレス</div>
-              <div class="mm-form-item"><input type="text" name="email" value="" style="width:  300px"></div>
-              <input type="submit" value="解除" name="submit" class="mm-form-submit">
+              <div class="mm-form-item inline-blk"><input type="text" name="email" value="" class="input-form"></div>
+              <input type="submit" value="解除" name="submit" class="mm-form-submit btn-pink" style="border-radius: 4px;">
               <input type="hidden" name="reg" value="del">
               <input type="hidden" name="encode" value="文字コード">
             </div>
